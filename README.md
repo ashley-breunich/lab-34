@@ -16,9 +16,6 @@
 ###### `foo(thing) -> string`
 Usage Notes or examples
 
-###### `bar(array) -> array`
-Usage Notes or examples
-
 #### Tests
 * How do you run tests?
 * What assertions were made?
