@@ -175,7 +175,7 @@ Sets the state - id to null
 #### `components/record/reducers.js`
 ##### Exported Values and Methods
 
-###### `export default
+###### `export default`
 <-- state, action 
 
 <-- type 
@@ -184,8 +184,7 @@ Sets the state - id to null
 
 
 #### Tests
-* What assertions were made?
-* What assertions need to be / should be made?
+I am having issues testing this lab. I keep getting the error: "Cannot read property 'find' of undefined"
 
 #### UML
 Link to an image of the UML for your application and response to events
