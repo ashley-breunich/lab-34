@@ -92,11 +92,95 @@ The app component is wrapped in the store allowing the entire program to have ac
 ###### `CLASS Records`
 Sets the state - { id: null }
 
---> <button>
+--> button 
 
---> <ul>
+--> ul tag
 
 --> Record Component
+
+###### `componentDidMount()`
+Runs when the component loads
+
+--> this.props.model
+
+###### `deleteRecord()`
+<-- id
+
+--> this.props.handleDelete()
+
+###### `editRecord()`
+<-- id
+
+Sets the state - id 
+
+###### `reset()`
+Sets the state - id to null
+
+###### `mapStateToProps()`
+<-- state
+
+--> records
+
+###### `mapDispatchToProps()`
+<-- dispatch, getState
+
+--> handlePost
+
+--> getAll
+
+--> handleDelete
+
+
+#### `components/record/record.js`
+##### Exported Values and Methods
+
+###### `CLASS Record`
+Sets the state - { id: null, schema: {} }
+
+--> h3 
+
+--> Form
+
+###### `componentDidMount()`
+This runs when the component loads
+
+Sets the state - { schema: data.body }
+
+###### `resetPlayer()`
+<-- id
+Sets the state - id to null
+
+###### `handleSubmit()`
+<-- form
+
+--> handlePut() || handlePost()
+
+###### `mapStateToProps()`
+<-- state
+
+--> records
+
+###### `mapDispatchToProps()`
+<-- dispatch, getState
+
+--> handlePost
+
+--> handlePut
+
+--> handlePatch
+
+--> getSchema
+
+
+#### `components/record/reducers.js`
+##### Exported Values and Methods
+
+###### `export default
+<-- state, action 
+
+<-- type 
+
+--> appropriate state in some from depending on case
 
 
 #### Tests
